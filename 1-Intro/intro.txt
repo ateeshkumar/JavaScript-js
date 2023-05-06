@@ -1,0 +1,10 @@
+java script is a high level interpreted programming language that can be used on the client side as well as the server-side with node.js
+it is for DOM (document object model) Manipulation
+Event Handling
+Asynchronous Requests
+Animations & Effects
+Data MAnipulation
+Storing data
+Single page Application
+Create api & web Services(Node.js, Deno)
+
