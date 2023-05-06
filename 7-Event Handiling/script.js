@@ -25,31 +25,77 @@ clearBtn.addEventListener('click',onClear);
 
 //   2-Mouse Events
 const logo = document.querySelector('.img');
-const onClick = ()=>{
-    // document.body.style.backgroundColor='purple';
-   if (document.body.style.backgroundColor !=='purple') {
-       document.body.style.backgroundColor='purple';
-       document.body.style.color = 'white';
-   }else{
-    document.body.style.backgroundColor = 'white';
-    document.body.style.color = 'black'
-   }
+// const onClick = ()=>{
+//     // document.body.style.backgroundColor='purple';
+//    if (document.body.style.backgroundColor !=='purple') {
+//        document.body.style.backgroundColor='purple';
+//        document.body.style.color = 'white';
+//    }else{
+//     document.body.style.backgroundColor = 'white';
+//     document.body.style.color = 'black'
+//    }
+// }
+// const onRightClick = ()=> console.log('Right click event');
+// const onMouseDown = ()=> console.log('Mouse down event');
+// const onMouseUp = ()=> console.log('Mouse up event');
+// const onMouseWheel = ()=> console.log('Mouse Wheel event');
+// const onMouseOver = ()=> console.log('Mouse over event');
+// const onMouseOut = ()=> console.log('Mouse out event');
+// const onDragStart = ()=> console.log('Drag start event');
+
+// logo.addEventListener('click',onClick);
+// logo.addEventListener('dblclick',onClick);
+// logo.addEventListener('contextmenu',onRightClick);
+// logo.addEventListener('mousedown',onMouseDown);
+// logo.addEventListener('mouseup',onMouseUp);
+// logo.addEventListener('wheel',onMouseWheel);
+// logo.addEventListener('mouseover',onMouseOver);
+// logo.addEventListener('mouseout',onMouseOut);
+// logo.addEventListener('dragstart',onDragStart);
+
+// 3- Event Object
+
+// function onClick(e){
+//     console.log(e.target);
+//     console.log(e.currentTarget);
+//     console.log(e.type);
+//     console.log(e.timeStamp);
+//     console.log(e.clientX);
+//     console.log(e.clientY);
+//     console.log(e.offsetX);
+//     console.log(e.offsetY);
+//     console.log(e.pageX);
+//     console.log(e.pageY);
+//     console.log(e.screenX);
+//     console.log(e.screenY);
+
+// }
+// logo.addEventListener('click',onClick);
+// document.querySelector('a').addEventListener('click',(e)=>{
+//     e.preventDefault();
+//     console.log("Link Was Clicked");
+
+// });
+// function onDrag(e){
+//     document.querySelector('h1').textContent = `X ${e.clientX} Y ${e.clientY}`;
+// }
+// logo.addEventListener('drag',onDrag);
+
+
+// 4 - KeyBoard Event
+
+const input = document.querySelector('input');
+const onKeyPress = e=>{
+    const h1 = document.querySelector('h1');
+    h1.append(e.key);
 }
-const onRightClick = ()=> console.log('Right click event');
-const onMouseDown = ()=> console.log('Mouse down event');
-const onMouseUp = ()=> console.log('Mouse up event');
-const onMouseWheel = ()=> console.log('Mouse Wheel event');
-const onMouseOver = ()=> console.log('Mouse over event');
-const onMouseOut = ()=> console.log('Mouse out event');
-const onDragStart = ()=> console.log('Drag start event');
+const onKeyDown = e=>{
+    console.log('Press Down');
+}
+const onKeyUp = e=>{
+    console.log('Press Up');
+}
 
-logo.addEventListener('click',onClick);
-logo.addEventListener('dblclick',onClick);
-logo.addEventListener('contextmenu',onRightClick);
-logo.addEventListener('mousedown',onMouseDown);
-logo.addEventListener('mouseup',onMouseUp);
-logo.addEventListener('wheel',onMouseWheel);
-logo.addEventListener('mouseover',onMouseOver);
-logo.addEventListener('mouseout',onMouseOut);
-logo.addEventListener('dragstart',onDragStart);
-
+input.addEventListener('keypress',onKeyPress);
+input.addEventListener('keydown',onKeyDown);
+input.addEventListener('keyup',onKeyUp);
