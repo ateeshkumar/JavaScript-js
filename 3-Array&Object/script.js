@@ -22,55 +22,56 @@ const fruit = ['apple','pear','orange'];
 const berries = ['strawberry','blueberry','rasberry'];
 // fruit.push(berries);
 const allFruits = [fruit,berries];
-y = allFruits[0];
+// y = allFruits[0];
 y = fruit.concat(berries);
 y = [...fruit,...berries];
 console.log(y); 
 
 //object cteation
 
-const persion = {
-    name:'ateesh kuamr',
-    age: 21,
-    isAdmin: true,
-    address:{
-        street:'123 xyz',
-        city: 'Bosten',
-        state: 'MA',
-    },
-    hobbis:['music','sport'],
-};
-let z = persion.address;
-console.log(persion);
+// const persion = {
+//     name:'ateesh kuamr',
+//     age: 21,
+//     isAdmin: true,
+//     address:{
+//         street:'123 xyz',
+//         city: 'Bosten',
+//         state: 'MA',
+//     },
+//     hobbis:['music','sport'],
+// };
+// let z = persion.address;
+// console.log(persion);
 
-//Array object and method
-const obj1 = {a:1,b:2};
-const obj2 = {c:1,d:2};
+// //Array object and method
+// const obj1 = {a:1,b:2};
+// const obj2 = {c:1,d:2};
 
-// console.log(...obj1,...obj2);
+// // console.log(...obj1,...obj2);
 
-const todos = [
-    {id:1, Name:"ateesh"},
-    {id:2,Name:"ateesg"},
-];
-let p= todos[1].Name; 
-let p1= todos[1].id; 
-console.log(p1);
+// const todos = [
+//     {id:1, Name:"ateesh"},
+//     {id:2,Name:"ateesg"},
+// ];
+// let p= todos[1].Name; 
+// let p1= todos[1].id; 
+// console.log(p1);
 
 
-//distructor
-const fristName = 'Ateesh';
-const lastName = 'Kumar';
-const age = 20;
+// //distructor
+// const fristName = 'Ateesh';
+// const lastName = 'Kumar';
+// const age = 20;
 
-const todo={
-    fristName:fristName,
-    lastName:lastName,
-    age:age,
-}
-console.log(todo);
+// const todo={
+//     fristName:fristName,
+//     lastName:lastName,
+//     age:age,
+// }
+// console.log(todo);
 
-//Distructor of array
+// //Distructor of array
 const arr4 = [12,13,14,15,16,17];
-const [frist,second,...rest]=arr4;
-console.log(frist,second,rest);
+const [...rest]=arr4;
+console.log(rest);
+console.log(arr4);
